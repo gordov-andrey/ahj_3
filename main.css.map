@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAAA,KACI,UACJ,CACA,KAGI,qBAAuB,CADvB,YAAa,CADb,WAGJ,CACA,IACI,cACJ","sources":["webpack://ahj_3/./src/css/style.css"],"sourcesContent":["body {\n    color: #999;\n}\n.col {\n    width: 125px;\n    height: 125px;\n    border: 2px solid black;\n}\ndiv {\n    font-size: 32px;\n}"],"names":[],"sourceRoot":""}
