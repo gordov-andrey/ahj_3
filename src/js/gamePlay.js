@@ -22,11 +22,10 @@ export function gamePlay() {
       img.remove();
       botScore.innerText = `БОТ: ${score.bot}`;
       if (score.bot === 5) {
-        userScore.innerHTML = `Игрок: ${score.user}`;
-        botScore.innerHTML = `БОТ: ${score.bot}`;
-        alert(`Гамовер! Cчет: ${score.user} : ${score.bot}`);
-        score.user = 0;
-        score.bot = 0;
+        userScore.innerText = `Игрок: ${score.user}`;
+        botScore.innerText = `БОТ: ${score.bot}`;
+        alert(`Гамовер!`);
+        location.reload();
       }
     }
   });
@@ -36,9 +35,9 @@ export function gamePlay() {
 
 tbody.addEventListener('click', (e) => {
     if (e.target.id === 'img') {
-      userScore.innerHTML = `Игрок: ${score.user++}`;
+      userScore.innerText = `Игрок: ${score.user++}`;
       if (score.bot > 0) {
-        botScore.innerHTML = `БОТ: ${score.bot--}`;
+        botScore.innerText = `БОТ: ${score.bot--}`;
   
       }
     }
