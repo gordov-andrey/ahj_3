@@ -1,0 +1,11 @@
+body {
+    color: #999;
+}
+.col {
+    width: 125px;
+    height: 125px;
+    border: 2px solid black;
+}
+div {
+    font-size: 32px;
+}
