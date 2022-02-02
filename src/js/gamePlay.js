@@ -20,17 +20,14 @@ export function gamePlay() {
     const img = item.querySelector('#img');
     if (img) {
       img.remove();
-      botScore.innerText = `БОТ: ${score.bot}`;
       if (score.bot === 5) {
-        userScore.innerText = `Игрок: ${score.user}`;
-        botScore.innerText = `БОТ: ${score.bot}`;
         alert(`Гамовер!`);
         location.reload();
       }
     }
   });
   insertRandom();
-  score.bot++;
+  botScore.innerText = `БОТ: ${score.bot++}`;
 }
 
 tbody.addEventListener('click', (e) => {
